@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Module 4 </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <script src="main.js" async></script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuR3wUKPFFDOSRYbgHgM5q-PQS8wYRKGg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</head>
+
+<body>
+   <div class="inner">
+      <h1><u> Module 4 - Browser and Third Party Api's </u></h1>
+      <section>
+        <!-- This is weekly event form and it inputs the value and sends the value to function addGoal -->
+      <form>
+          <h3><u>Enter your weekly task</u></h3>
+        <input name="access" id="access">
+        <input type="submit" value="Add Task" id="submit">
+      </form>
+      </section>
+      <section class="completed">
+        <h3><u>Completed Tasks</u></h3>
+      </section>
+
+      <section>
+        <!-- This is Browser api. It uses geolocation api and checks the browser compatibility and consent using status. Then it displays the map in maplink-->
+      <h1> The Browser Api - Geolocation Api</h1>
+      <button id = "geo">I can find your location</button><br/>
+      <p id = "status"></p>
+      <a id = "maplink"></a>
+      </section>
+
+      <section>
+        <!-- This is third party api. It uses Google api to display location of Barrie -->
+      <h1> The Third Party Api - Google Maps Api</h1>
+      <div id="map"></div>  
+      </section>
+
+      <small> By: Harkirat Singh Brar, 200447333</small>
+  </div>
+</body>
+</html>
